@@ -11,10 +11,17 @@
 	COLORES
   color1 => #8CDE54; (Verde)
   color2 => #83D844; (alternativa verde)
-	color => #9DBB3F;
+	color3 => #9DBB3F; (tomado de AI)
 		https://htmlcolorcodes.com/es/
 
 	TIPOGRAFIAS
+
+		letra gruesa en "section valores"
+	font-family: Cubano, 'Quicksand', sans-serif;
+
+		letra delgada en "section valores"
+	font-family: 'Blanch Caps';
+
 	font-family: 'Black Han Sans', sans-serif;
 	font-family: 'Ranga', cursive;
 	font-family: 'Quicksand', sans-serif;
@@ -83,7 +90,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #9DBB3F;
+    background: #8CDE54;
   }
 
 .video{
@@ -91,28 +98,40 @@ body {
 }
 
 .logo{
-	margin: 50px;
-  padding: 120px;
+	margin: 10px;
+  padding: 50px;
 }
 
 .fotos{
-	background: #8CDE54;
-	padding-top: 10px;
+	/*background: #8CDE54;*/
+	/*padding-top: 10px; */
 	padding-bottom: 70px;
 }
 
 .valores{
-	color: #000;
+	background-color: #8CDE54;
+	color: white;
 	padding-bottom: 40px;
 	/*font-family: 'Amatic SC', cursive;
 	font-family: 'Poiret One', cursive;*/
-	font-family: 'Quicksand', sans-serif;
+	/*font-family: 'Blanch Caps', 'Quicksand', sans-serif;*/
 }
+	#tg{
+		font-size: 50px;
+		font-family: Cubano, sans-serif;
+	}
+	#td{
+		font-family: 'Blanch Caps', monospace;
+		font-size: 140px;
+	}
 	.valores h1 {
-		color: #8CDE54;
+		/*color: #8CDE54;*/
+		color: white;
 		font-size: 120px;
 		/* font-family: sans-serif;*/
-		font-family: 'Black Han Sans', sans-serif;
+	/*font-family: 'Black Han Sans', sans-serif;*/
+	font-family: Cubano;
+
 	}
 /*
 .mision{
