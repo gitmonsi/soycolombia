@@ -11,6 +11,7 @@
 	COLORES
   color1 => #8CDE54; (Verde)
   color2 => #83D844; (alternativa verde)
+	color => #9DBB3F;
 		https://htmlcolorcodes.com/es/
 
 	TIPOGRAFIAS
@@ -82,7 +83,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #8CDE54;
+    background: #9DBB3F;
   }
 
 .video{
