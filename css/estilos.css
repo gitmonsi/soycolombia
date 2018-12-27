@@ -98,21 +98,20 @@ body {
 }
 
 .logo{
-	margin: 10px;
-  padding: 50px;
+  padding-top: 50px;
 }
 
 .fotos{
 	/*background: #8CDE54;*/
 	/*padding-top: 10px; */
-	padding-bottom: 70px;
+	padding-bottom: 50px;
 }
 
 .valores{
 	background-color: #8CDE54;
 	color: white;
 	margin-top: 40px;
-	padding-top: 40px;
+	padding-top: 60px;
 	padding-bottom: 40px;
 	/*font-family: 'Amatic SC', cursive;
 	font-family: 'Poiret One', cursive;*/
@@ -126,26 +125,13 @@ body {
 		font-family: 'Blanch Caps', monospace;
 		font-size: 140px;
 	}
+
+/*
 	.valores h1 {
-		/*color: #8CDE54;*/
 		color: white;
 		font-size: 120px;
-		/* font-family: sans-serif;*/
-	/*font-family: 'Black Han Sans', sans-serif;*/
 	font-family: Cubano;
-
 	}
-/*
-.mision{
-  color: blue;
-  font: 'Ranga';
-}
-
-.vision{
-  color: green;
-  font: 'Ranga';
-	background: #8CDE54;
-}
 */
 
 .derechos{
