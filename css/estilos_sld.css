@@ -34,11 +34,16 @@ body{
     transition: all 1s;
 }
 
+#foto1{
+    transform: translateX(0);
+    opacity: 1;
+}
+/*
 #img1{
     transform: translateX(0);
     opacity: 1;
 }
-
+*/
 .content-img:target{
     transform: translateX(0) rotateY(0deg);
     opacity: 1;
