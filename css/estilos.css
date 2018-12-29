@@ -157,7 +157,7 @@ body {
 
 		display: flex;
 
-		animation: modal 2s 1s forwards;
+		animation: modal 2s 0s forwards;
 		visibility: hidden;
 		opacity: 0;
 	}
