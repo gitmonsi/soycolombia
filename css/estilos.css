@@ -145,3 +145,63 @@ body {
 		text-decoration: none;
 		color: green;
 	}
+
+	.modal{
+		width: 100%;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.9);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		display: flex;
+
+		animation: modal 2s 0s forwards;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+/*contenido de la ventana modal*/
+	.contenido{
+		margin: 10px auto;
+		width: 50%;
+		height: 80%;
+		background: #000;
+		border-radius: 10px;
+	}
+
+/* BOTON CERRAR VENTANA MODAL*/
+#cerrar{
+	display: none;
+}
+
+#cerrar + label{
+	position: fixed;
+	color: white;
+	font-family: sans-serif;
+	font-size: 25px;
+	z-index: 50;
+	background: darkgreen;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	right: 10px;
+	cursor: pointer;
+
+	animation: modal 2s 3s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+	display: none;
+}
+
+@keyframes modal {
+	100%{
+		visibility: visible;
+		opacity: 1;
+	}
+}
