@@ -105,6 +105,7 @@ body {
 	/*background: #8CDE54;*/
 	/*padding-top: 10px; */
 	padding-bottom: 50px;
+	z-index: -10;
 }
 
 .valores{
@@ -151,7 +152,7 @@ body {
 		height: 100vh;
 		background: rgba(0, 0, 0, 0.9);
 
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 
@@ -177,11 +178,11 @@ body {
 }
 
 #cerrar + label{
-	position: fixed;
+	position: absolute;
 	color: white;
 	font-family: sans-serif;
 	font-size: 10px;
-	z-index: 50;
+	z-index: 100;
 	background: darkgreen;
 	height: 40px;
 	width: 100px;
