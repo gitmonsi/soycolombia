@@ -180,14 +180,14 @@ body {
 	position: fixed;
 	color: white;
 	font-family: sans-serif;
-	font-size: 25px;
+	font-size: 10px;
 	z-index: 50;
 	background: darkgreen;
 	height: 40px;
-	width: 40px;
+	width: 100px;
 	line-height: 40px;
-	border-radius: 50%;
-	right: 10px;
+	border-radius: 2%;
+	right: 100px;
 	cursor: pointer;
 
 	animation: modal 2s 3s forwards;
