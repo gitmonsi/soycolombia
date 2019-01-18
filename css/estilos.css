@@ -94,18 +94,25 @@ body {
   }
 
 .video{
-	padding: 40px;
+	height: 100vh;
+	/* padding: 40px; */
 }
 
 .logo{
-  padding-top: 50px;
+	height: 100vh;
+  /* padding-top: 50px; */
 }
+
+.img-logo{
+	padding-top: 8%;
+}
+
 
 .fotos{
 	/*background: #8CDE54;*/
 	/*padding-top: 10px; */
-	padding-bottom: 50px;
-	z-index: -10;
+	/* padding-bottom: 50px; */
+	height: 100vh;
 }
 
 .valores{
@@ -138,7 +145,7 @@ body {
 .derechos{
 	background: #8CDE54;
 	color: white;
-	padding: 10px;
+	/* padding: 10px; */
 	font-size: 12px;
 	font-family: 'Quicksand', sans-serif;
 }
@@ -167,7 +174,7 @@ body {
 
 /*contenido de la ventana modal*/
 	.contenido{
-		margin: auto;
+		margin: 0 auto;
 		width: 80%;
 		height: 80%;
 		background: #000;
@@ -182,12 +189,12 @@ body {
 
 #cerrar + label{
 	position: fixed;
-	bottom: 2.5%;
+	bottom: 10%;
 	color: white;
 	font-family: sans-serif;
 	font-size: 25px;
 	z-index: 50;
-	background: darkgreen;
+	background: #8CDE54;
 	height: 43px;
 	width: 150px;
 	/* line-height: 40px; */
@@ -206,6 +213,9 @@ body {
 	display: none;
 }
 
+#btn-cerrar:hover{
+	background: rgba(140, 222, 84, 0.6);
+}
 
 @keyframes modal {
 	100%{
