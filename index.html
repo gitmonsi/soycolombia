@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/estilos_sld.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <script type="text/javascript" src="js/scripts.js"></script>
 
     <!-- TIPOGRAFIAS -->
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
@@ -17,12 +20,11 @@
     <header class="header">
 
     <!-- Ventana modal -->
-
-      <input type="checkbox" id="cerrar">
+      <input type="checkbox" id="cerrar" name="checkbox">
       <label for="cerrar" id="btn-cerrar">Descubrir</label>
       <div class="modal">
         <div class="contenido">
-          <iframe width="80%" height="100%" src="https://www.youtube.com/embed/xmlhcQyC_6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="youtube-video" id="videini" width="80%" height="100%" src="https://www.youtube.com/embed/xmlhcQyC_6c?version=3&enablejsapi=1;rel=0&amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <!-- ?rel=0&amp;autoplay=1 -->
           <!--
           <img src="http://lorempixel.com/200/200" alt="">
@@ -193,4 +195,5 @@
       	<p>Todos los derechos reservados <a href="http://www.encordsas.com">&copy; ENCORD SAS.</a></p>
     </section>
   </body>
+
 </html>

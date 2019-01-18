@@ -199,11 +199,13 @@ body {
 	animation: modal 2s 3s forwards;
 	visibility: hidden;
 	opacity: 0;
+
 }
 
 #cerrar:checked + label, #cerrar:checked ~ .modal {
 	display: none;
 }
+
 
 @keyframes modal {
 	100%{
