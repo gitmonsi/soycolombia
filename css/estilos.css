@@ -56,7 +56,7 @@
 
 .btn-bajar {
  color: rgb(40, 40, 40);
- text-decoration: none; 
+ text-decoration: none;
  /*background-color: red;*/
  /*padding: 0 48% 0 48%;*/
  /*line-height: 1em;*/
@@ -111,7 +111,7 @@
 .slider {
   height: 100vh;
   width: 100%;
-  background-color: #8CDE54; 
+  background-color: #8CDE54;
 }
 
 .cont-slider {
@@ -129,15 +129,15 @@
 .enlace{
   background-color: #8CDE54;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .derechos{
   background: #8CDE54;
-  height: 70vh;
+  height: 100vh;
   color: white;
   padding: 10px;
-  text-align: center; 
+  text-align: center;
   font-size: 12px;
   font-family: 'Quicksand', sans-serif;
 }
@@ -145,9 +145,17 @@
     text-decoration: none;
     color: green;
   }
-  
+
 .derechos-titulo {
-  padding-top: 10%;
-  padding-bottom: 13%;
+  padding-top: 25%;
   /*padding-bottom: 30%;*/
+}
+
+.enlacefin{
+  height: 90vh;
+}
+
+.derechosfin{
+  height: 10vh;
+  background-color: #8cde54;
 }
