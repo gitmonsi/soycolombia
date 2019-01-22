@@ -1,225 +1,153 @@
-/*
-  STYLES GUIDE:
-  0. RESET
-  1. LAYOUT
-  2. GENERIC ITEMS
-  3. PARTS OF THE WEB
-  4. LIST
-  5. FORM
-  6. ANIMATION
--------------------------
-	COLORES
-  color1 => #8CDE54; (Verde)
-  color2 => #83D844; (alternativa verde)
-	color3 => #9DBB3F; (tomado de AI)
-		https://htmlcolorcodes.com/es/
-
-	TIPOGRAFIAS
-
-		letra gruesa en "section valores"
-	font-family: Cubano, 'Quicksand', sans-serif;
-
-		letra delgada en "section valores"
-	font-family: 'Blanch Caps';
-
-	font-family: 'Black Han Sans', sans-serif;
-	font-family: 'Ranga', cursive;
-	font-family: 'Quicksand', sans-serif;
-	font-family: 'Amatic SC', cursive;
-	font-family: 'Poiret One', cursive;
-*/
-
-/* 0. RESET  */
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../iconos/fonts/icomoon.eot?ugkvhh');
+  src:  url('../iconos/fonts/icomoon.eot?ugkvhh#iefix') format('embedded-opentype'),
+    url('../iconos/fonts/icomoon.ttf?ugkvhh') format('truetype'),
+    url('../iconos/fonts/icomoon.woff?ugkvhh') format('woff'),
+    url('../iconos/fonts/icomoon.svg?ugkvhh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/*INICIO ESTILOS DE LA PAGINA*/
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-body {
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-keyboard_arrow_down:before {
+  content: "\e313";
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e314";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e315";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e316";
+}
+
+/*inicio estilos*/
+
+.header {
+  height: 100vh;
+  background-color: #8CDE54;
+}
+
+.cont-video {
+  height: 90vh;
+  width: 100%;
+}
+
+.video {
+  height: 90vh;
+  width: 100%;
+}
+
+.btn-bajar {
+ color: rgb(40, 40, 40);
+ text-decoration: none; 
+ /*background-color: red;*/
+ /*padding: 0 48% 0 48%;*/
+ /*line-height: 1em;*/
+ /*padding-top: 2%;*/
+ padding-right: 30%;
+ padding-left: 30%;
+ font-size: 35pt;
+}
+.cont-btn-bajar {
+  height: 10vh;
+  vertical-align: middle;
   text-align: center;
-  font:300 20px/1.7 'Ranga';
-}
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #8CDE54;
-  }
-
-.video{
-	height: 100vh;
-	/* padding: 40px; */
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(66,66,66,1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(66,66,66,1);
+  box-shadow: 0px 0px 7px 0px rgba(66,66,66,1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.logo{
-	height: 100vh;
-  /* padding-top: 50px; */
+.cont-btn-bajar:hover {
+  background-color: rgba(0,0,0,0.2);
+  font-size: 45pt;
 }
 
-.img-logo{
-	padding-top: 8%;
+.cont-btn-bajar a:hover {
+  color: white;
 }
 
+.logo {
+  height: 100vh;
+  width: 100%;
+  background-color: #8CDE54;
+}
 
-.fotos{
-	/*background: #8CDE54;*/
-	/*padding-top: 10px; */
-	/* padding-bottom: 50px; */
-	height: 100vh;
+.cont-logo {
+  height: 90vh;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  max-height: 80%;
+  min-height: 30%;
+  margin: auto;
+}
+
+.slider {
+  height: 100vh;
+  width: 100%;
+  background-color: #8CDE54; 
+}
+
+.cont-slider {
+  height: 90vh;
+  width: 100%;
+  background-color: white;
 }
 
 .valores{
-	background-color: #8CDE54;
-	color: white;
-	margin-top: 40px;
-	padding-top: 60px;
-	padding-bottom: 40px;
-	/*font-family: 'Amatic SC', cursive;
-	font-family: 'Poiret One', cursive;*/
-	/*font-family: 'Blanch Caps', 'Quicksand', sans-serif;*/
+  background-color: #8CDE54;
+  text-align: center;
+  padding-top: 10px;
 }
-	#tg{
-		font-size: 50px;
-		font-family: Cubano, sans-serif;
-	}
-	#td{
-		font-family: 'Blanch Caps', monospace;
-		font-size: 140px;
-	}
 
-/*
-	.valores h1 {
-		color: white;
-		font-size: 120px;
-	font-family: Cubano;
-	}
-*/
+.enlace{
+  background-color: #8CDE54;
+  text-align: center;
+  height: 90vh;
+}
 
 .derechos{
-	background: #8CDE54;
-	color: white;
-	/* padding: 10px; */
-	font-size: 12px;
-	font-family: 'Quicksand', sans-serif;
+  background: #8CDE54;
+  height: 70vh;
+  color: white;
+  padding: 10px;
+  text-align: center; 
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
 }
-.derechos	a{
-		text-decoration: none;
-		color: green;
-	}
-
-	.modal{
-		width: 100%;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.8);
-
-		position: fixed;
-		top: 0;
-		left: 0;
-
-		display: flex;
-
-		animation: modal 2s 0s forwards;
-		visibility: hidden;
-		opacity: 0;
-		z-index: 30;
-
-	}
-
-/*contenido de la ventana modal*/
-	.contenido{
-		margin: 0 auto;
-		width: 80%;
-		height: 80%;
-		background: #000;
-		border-radius: 10px;
-	}
-
-/* BOTON CERRAR VENTANA MODAL*/
-
-#cerrar{
-	display: none;
-}
-
-#cerrar + label{
-	position: fixed;
-	bottom: 10%;
-	color: white;
-	font-family: sans-serif;
-	font-size: 25px;
-	z-index: 50;
-	background: #8CDE54;
-	height: 43px;
-	width: 150px;
-	/* line-height: 40px; */
-	border-radius: 2%;
-	/* padding: 0.5% 2%; */
-	/* right: 100px; */
-	cursor: pointer;
-
-	animation: modal 2s 3s forwards;
-	visibility: hidden;
-	opacity: 0;
-
-}
-
-#cerrar:checked + label, #cerrar:checked ~ .modal {
-	display: none;
-}
-
-#btn-cerrar:hover{
-	background: rgba(140, 222, 84, 0.6);
-}
-
-@keyframes modal {
-	100%{
-		visibility: visible;
-		opacity: 1;
-	}
+.derechos a{
+    text-decoration: none;
+    color: green;
+  }
+  
+.derechos-titulo {
+  padding-top: 10%;
+  padding-bottom: 13%;
+  /*padding-bottom: 30%;*/
 }
